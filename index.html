@@ -8,9 +8,22 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      .card-link {
+        text-decoration: none; /* Menghilangkan garis bawah pada pautan */
+        color: inherit; /* Mewarisi warna teks dari induk */
+        display: block; /* Membuat pautan memenuhi keseluruhan kawasan kad */
+        transition: transform 0.2s ease-in-out; /* Animasi zoom halus */
+      }
+      .card-link:hover .card {
+        transform: scale(
+          1.03
+        ); /* Membesarkan sedikit kad apabila tetikus di atasnya */
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2) !important; /* Bayangan yang lebih menonjol */
+      }
+    </style>
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">CreativaFest</a>
@@ -41,10 +54,9 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="bg-primary text-white text-center py-5">
       <div class="container">
-        <h1 class="display-4 fw-bold">Creativa Festival 2025</h1>
+        <h1 class="display-4 fw-bold">Creatival XYZ Festival 2025</h1>
         <p class="lead">Where Creativity Meets Celebration</p>
         <a href="#register" class="btn btn-light btn-lg mt-3"
           >Get Your Ticket</a
@@ -52,7 +64,6 @@
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-5">
       <div class="container text-center">
         <h2 class="mb-4">About The Event</h2>
@@ -64,32 +75,34 @@
       </div>
     </section>
 
-    <!-- Line-Up Section -->
     <section id="lineup" class="bg-light py-5">
       <div class="container">
         <h2 class="text-center mb-4">Main Line-Up</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card shadow h-100">
-              <img
-                src="https://source.unsplash.com/400x250/?music,concert"
-                class="card-img-top"
-                alt="Artist 1"
-              />
-              <div class="card-body">
-                <h5 class="card-title">DJ Nova</h5>
-                <p class="card-text">Electronic Vibes</p>
+            <a href="djsnake.html" class="card-link">
+              <div class="card shadow h-100">
+                <img
+                  src="https://d3vhc53cl8e8km.cloudfront.net/artists/865/d9038318-3109-11ec-954e-0ecc81f4ee58.jpg"
+                  class="card-img-top"
+                  alt="DJ Snake"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">DJ Snake</h5>
+                  <p class="card-text">Electronic Vibes</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col-md-4">
             <div class="card shadow h-100">
               <img
-                src="https://source.unsplash.com/400x250/?art,painting"
+                src="https://images.squarespace-cdn.com/content/v1/625c8234f85b4b2660323198/49ecf3e7-d26d-4afb-bde1-98361ca17398/Chroma_Zone_Logo_Multicolor_White.png?format=1500w"
                 class="card-img-top"
-                alt="Artist 2"
+                alt="Art Zone"
               />
               <div class="card-body">
+                            <a href="djsnake.html" class="card-link">
                 <h5 class="card-title">Art Zone</h5>
                 <p class="card-text">Live Mural Painting</p>
               </div>
@@ -98,12 +111,13 @@
           <div class="col-md-4">
             <div class="card shadow h-100">
               <img
-                src="https://source.unsplash.com/400x250/?technology,event"
+                src="https://www.softserveinc.com/cdn/img/press/events-color/join-softserve-at-the-2024-gtc-ai-conference-social.png"
                 class="card-img-top"
-                alt="Artist 3"
+                alt="NVIDIA Showcase"
               />
               <div class="card-body">
-                <h5 class="card-title">Tech Showcase</h5>
+                            <a href="djsnake.html" class="card-link">
+                <h5 class="card-title">NVIDIA Showcase</h5>
                 <p class="card-text">Futuristic Installations</p>
               </div>
             </div>
@@ -112,7 +126,6 @@
       </div>
     </section>
 
-    <!-- Registration Section -->
     <section id="register" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">Register Now</h2>
@@ -138,7 +151,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
       <small>© 2025 Creativa Festival. All rights reserved.</small>
     </footer>
